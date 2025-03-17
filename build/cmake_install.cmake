@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/HelloCMake")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/my_project")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -30,6 +30,13 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("E:/Project/Projects_VSCode/my_project/build/src/cmake_install.cmake")
+  include("E:/Project/Projects_VSCode/my_project/build/libs/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

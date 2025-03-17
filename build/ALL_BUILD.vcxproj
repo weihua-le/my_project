@@ -173,9 +173,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="E:\Project\Projects_VSCode\my_project\build\hello.vcxproj">
-      <Project>{B38D5961-F435-3926-948B-A45C2A14C0ED}</Project>
-      <Name>hello</Name>
+    <ProjectReference Include="E:\Project\Projects_VSCode\my_project\build\src\my_project.vcxproj">
+      <Project>{1C10721A-4580-3871-8FC3-E9E06185B408}</Project>
+      <Name>my_project</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Project\Projects_VSCode\my_project\build\libs\mylib.vcxproj">
+      <Project>{6C138FF6-64AF-3E75-A7D5-1E1D8B2AB267}</Project>
+      <Name>mylib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
