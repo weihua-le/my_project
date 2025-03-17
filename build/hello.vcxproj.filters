@@ -4,6 +4,9 @@
     <ClCompile Include="E:\Project\Projects_VSCode\my_project\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\Project\Projects_VSCode\my_project\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="E:\Project\Projects_VSCode\my_project\CMakeLists.txt" />
