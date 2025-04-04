@@ -2,13 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\Project\Projects_VSCode\my_project\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>E:\Visual Studio Code\my_project\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>E:\Project\Projects_VSCode\my_project\build\src\Debug\my_project.exe</FullPath>
+      <FullPath>E:\Visual Studio Code\my_project\build\src\Debug\my_project.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>E:\Project\Projects_VSCode\my_project\build\x64\Debug\ALL_BUILD</FullPath>
+      <FullPath>E:\Visual Studio Code\my_project\build\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

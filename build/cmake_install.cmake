@@ -1,4 +1,4 @@
-# Install script for directory: E:/Project/Projects_VSCode/my_project
+# Install script for directory: E:/Visual Studio Code/my_project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("E:/Project/Projects_VSCode/my_project/build/src/cmake_install.cmake")
-  include("E:/Project/Projects_VSCode/my_project/build/libs/cmake_install.cmake")
+  include("E:/Visual Studio Code/my_project/build/src/cmake_install.cmake")
+  include("E:/Visual Studio Code/my_project/build/libs/cmake_install.cmake")
 
 endif()
 
@@ -54,6 +54,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "E:/Project/Projects_VSCode/my_project/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "E:/Visual Studio Code/my_project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,6 +1,6 @@
-^E:\PROJECT\PROJECTS_VSCODE\MY_PROJECT\CMAKELISTS.TXT
+^E:\VISUAL STUDIO CODE\MY_PROJECT\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/Project/Projects_VSCode/my_project -BE:/Project/Projects_VSCode/my_project/build --check-stamp-file E:/Project/Projects_VSCode/my_project/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/Visual Studio Code/my_project" "-BE:/Visual Studio Code/my_project/build" --check-stamp-file "E:/Visual Studio Code/my_project/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

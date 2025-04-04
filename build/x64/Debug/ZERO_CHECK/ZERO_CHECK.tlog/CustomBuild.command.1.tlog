@@ -1,6 +1,6 @@
-^E:\PROJECT\PROJECTS_VSCODE\MY_PROJECT\BUILD\CMAKEFILES\8B820F22BEFFCFED8A6700B2FFDF00B4\GENERATE.STAMP.RULE
+^E:\VISUAL STUDIO CODE\MY_PROJECT\BUILD\CMAKEFILES\D762FA21EA6B1A930C8E87CB603A4977\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/Project/Projects_VSCode/my_project -BE:/Project/Projects_VSCode/my_project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Project/Projects_VSCode/my_project/build/my_project.sln
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/Visual Studio Code/my_project" "-BE:/Visual Studio Code/my_project/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "E:/Visual Studio Code/my_project/build/my_project.sln"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
