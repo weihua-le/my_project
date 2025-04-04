@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cl",
+            "args": [
+                "/EHsc",  // 启用异常处理
+                "/W3",    // 设置警告级别
+                "/wd4819", // 禁用警告 4819
+                "main.cpp"  // 你的源文件
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}

@@ -200,3 +200,27 @@ target_link_directories(my_project PUBLIC mylib)  # ❌ 这是错误的
 ```
 
 这样，CMake 就能正确找到 `mylib`，并自动处理头文件路径！ 🚀
+
+# 由于编码导致的错误&解决方法
+> 把文件的编码格式从UTF-8调整为UTF-8 BOM
+```
+PS E:\Visual Studio Code\my_project\build> cmake ..
+-- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.26100.
+-- Boost_INCLUDE_DIRS: E:/ThirdPartyPackages/vcpkg/installed/x64-windows/include
+-- Boost_LIBRARIES:
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: E:/Visual Studio Code/my_project/build
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: E:/Visual Studio Code/my_project/build
+-- Build files have been written to: E:/Visual Studio Code/my_project/build
+PS E:\Visual Studio Code\my_project\build> cmake --build .
+适用于 .NET Framework MSBuild 版本 17.13.19+0d9f5a35a
+
+  mylib.vcxproj -> E:\Visual Studio Code\my_project\build\libs\Debug\mylib.lib
+  main.cpp
+E:\Visual Studio Code\my_project\src\main.cpp(1,1): error C2220: 以下警告被视为错误 [E:\Visual Studio Code\my_project\build\src\my_project.vcxproj]
+E:\Visual Studio Code\my_project\src\main.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 [E:\Visual Studio Code\my_project\build\src\my_
+project.vcxproj]
+```
